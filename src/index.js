@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { BrowserRouter, Link, Route, Routes, Redirect } from "react-router-dom";
+import Login from './Components/Login';
+import Register from './Components/Register';
+import AppContext from './Context/Context';
+import ParentApp from './Components/ParentApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <ParentApp/>
   </React.StrictMode>
 );
 
