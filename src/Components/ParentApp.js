@@ -55,6 +55,7 @@ function ParentApp(props)
                 <Route path="/accountInfo" element={<AccountInfo />}></Route>
                
                 <Route path="/" element={<ProductList/>} />
+                <Route path="/Still-River" element={<ProductList/>} />
                 <Route path="/product/:id" element={<ProductDetails/>}/>
                 <Route path="/product/update/:id" element={<UpdateProduct/>}/>
                 <Route path="/product/add" element={<AddProduct/>}/>
