@@ -10,13 +10,7 @@ function OrderItem(props) {
   var navigate = useNavigate();
   var AppCtx = useContext(AppContext);
    var [product,setProduct]=useState({})
-  
 
- 
-
-  
-
- 
   return (
     <div className="card">
      
