@@ -35,25 +35,6 @@ function Register(props) {
       .catch((err) => {
         setErrMsg("Error Registering User!");
       });
-
-    // fetch(backendUrl+"/customer-management/users",{
-    //     method:"POST",
-    //     headers:{
-    //         "Content-Type":"application/json"
-    //     },
-    //     body:data
-
-    // }).then(response=> response.text()).then(body=>console.log(body)).catch(err=>console.log(err));
-
-    // fetch(backendUrl+"/customer-management/un",{
-
-    //     method:"GET",
-    //     headers:{
-    //         "Content-Type":"application/json"
-    //     },
-    //     // body:data
-
-    // }).then(response=> response.text()).then(body=> console.log(body)).catch(err=>console.log(err));
   }
 
   var AppCtx = useContext(AppContext);
