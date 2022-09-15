@@ -1,5 +1,6 @@
 import { Badge } from "@mui/material";
 import React, { useContext, useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import AppContext from "../Context/Context";
 import ProductCard from "./ProductCard";
 
@@ -10,6 +11,9 @@ function ProductList(){
     const [products, setProducts] = useState([]);
     var [toggle,setToggle]=useState(false);
     // var [category,setCategory]=useState(AppCtx.category);
+
+    var navigate=useNavigate();
+
     useEffect(() => {
         console.log("Re rendering ");
         fetch(backendUrl+"/product-service/products?category="+AppCtx.category,{method:"GET"})
@@ -20,6 +24,7 @@ function ProductList(){
             }).then((res) => {
                 console.log(res);
                 setProducts(res);
+                navigate("/")
             })
             .catch((err) => {
                 console.log(err);
