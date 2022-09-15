@@ -168,7 +168,7 @@ function App(props) {
                       <li>
                         <span
                           onClick={(e) => {
-                            navigate("/accountInfo");
+                            navigate("/product/add");
                           }}
                           class="dropdown-item"
                         >
