@@ -15,7 +15,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { useContext, useState } from "react";
-import Badge from "@mui/icons-material/Badge";
+
 function App(props) {
   function signIn() {
     console.log("clicked!");
