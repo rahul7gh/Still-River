@@ -52,7 +52,7 @@ function Login(props)
     
     return (
        <div className="container" style={{width:"40%",paddingTop:"15%"}}>
-            <h2 style={{color:"red"}}>{errMsg}</h2>
+            <h3 className="text-primary">{errMsg}</h3>
             <form onSubmit={getData} className="row row-cols-1 gy-4">
                 <div className="col">
                     <input type="text" name="email" id="email" class="form-control" placeholder="Email" />

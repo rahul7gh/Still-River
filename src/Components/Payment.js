@@ -77,7 +77,7 @@ function Payment(props) {
   }, []);
   return (
     <div >
-      <h3 className="text-sucess mt-5" style={{margin:"auto",width:"fit-content"}}>{msg}</h3>
+      <h3 className="text-primary mt-5" style={{margin:"auto",width:"fit-content"}}>{msg}</h3>
       <table
         className="table"
         style={{
