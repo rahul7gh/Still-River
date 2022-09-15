@@ -48,7 +48,6 @@ function ParentApp(props)
             <BrowserRouter>
             <App test={test}/>
               <Routes>
-              {/* AccountInfo */}
                 <Route path="/signin" element={<Login />}></Route>
                 
                 <Route path="/cart" element={<Cart />}></Route>
